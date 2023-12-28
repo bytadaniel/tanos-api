@@ -1,8 +1,6 @@
 # compiled output
 /dist
 /node_modules
-/.evium_postgres
-/src/migrations/**
 
 .env
 
