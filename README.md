@@ -74,7 +74,7 @@ ts-node emulate-payload.ts
 
 1. `POST /measurements`:
 
-```json
+```typescript
 {
 	temperature: number,
 	timestamp: Date
@@ -87,7 +87,7 @@ ts-node emulate-payload.ts
 
 2. `POST /thresholds`:
 
-```json
+```typescript
 {
 	type: “temperature”,
 	value: number
@@ -102,8 +102,8 @@ ts-node emulate-payload.ts
 
 3. `GET /events?start=1703496282766&end=1703496282799`, где start и end – время UTC в миллисекундах. Start и end – необязательные параметры.
 
-- Возвращается список событий, отсортированных по времени создания (сначала новые),
-  начиная от времени start, и заканчивая временем end.
+Возвращается список событий, отсортированных по времени создания (сначала новые),
+начиная от времени start, и заканчивая временем end.
 
 **Дополнительные условия:**
 
